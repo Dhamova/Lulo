@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "lulo",
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='bg-slate-50 dark:bg-neutral-950'>{children}</body>
+      <body className='bg-slate-50 dark:bg-neutral-950'>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
