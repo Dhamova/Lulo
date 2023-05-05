@@ -4,26 +4,7 @@ import Link from "next/link";
 export default function Login() {
   return (
     <section>
-      <div className='flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0'>
-        <Link
-          href='/'
-          className='flex items-center mb-10 text-2xl font-mono font-semibold text-gray-900 dark:text-white'
-        >
-          <picture>
-            <source
-              srcSet='/DhamovaLogoWhite.svg'
-              media='(prefers-color-scheme: dark)'
-            />
-            <Image
-              className='w-8 h-8 mr-2'
-              src='/DhamovaLogo.svg'
-              alt='Lulo Logo'
-              width={100}
-              height={100}
-            />
-          </picture>
-          lulo.gg
-        </Link>
+      <div className='flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-[calc(100vh-200px)] lg:py-0'>
         <div className='w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-neutral-900 dark:border-neutral-800'>
           <div className='p-6 space-y-10 md:space-y-10 sm:p-8'>
             <h1 className='text-xl font-bold font-mono leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white'>
